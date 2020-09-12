@@ -1,0 +1,50 @@
+﻿@model pruebaTarea.Models.aguilar
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>aguilar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FriendofAguilar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FriendofAguilar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Place_lista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Place_lista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthday)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Birthday)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.aguilar_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
